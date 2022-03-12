@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Heart Disease Prediction</title>
+
+    <style>
+    body{
+      background-image: url("https://www.news-medical.net/image.axd?picture=2021%2F10%2Fshutterstock_1682046427-1.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+  </head>
+  <body>
+
+    <center>
+
+        <h1> Heart Disease Prediction </h1><br>
+
+
+<form class="" action="{{url_for('predict')}}" method="post">
+
+  ChestPain : <br> <input type="text", name='cp', placeholder="ChestPain"> <br><br>
+  BP :  <br> <input type="text", name='trestbps', placeholder="BP"> <br><br>
+  Cholesterol :  <br> <input type="text", name='chol', placeholder="Cholesterol"> <br><br>
+  Electrocardiogram :  <br> <input type="text", name='restecg', placeholder="electrocardiogram"> <br><br>
+  HeartRate :  <br> <input type="text", name='thalach', placeholder="HeartRate"> <br><br>
+
+  <input type="submit" , value='predict' >
+
+
+
+</form>
+
+</center>
+
+
+
+  </body>
+</html>
